@@ -13,20 +13,22 @@ const ImageCarousel = () => {
     };
 
     const images = [
-        'https://via.placeholder.com/800x400?text=Image+1',
-        'https://via.placeholder.com/800x400?text=Image+2',
-        'https://via.placeholder.com/800x400?text=Image+3',
-        'https://via.placeholder.com/800x400?text=Image+4',
+        require('../../assets/rolderImage.png'),
+        require('../../assets/rolderImage.png'),
+        require('../../assets/rolderImage.png'),
+        require('../../assets/rolderImage.png'),
     ];
 
     return (
-        <Slider {...settings}>
-            {images.map((image, index) => (
-                <div key={index}>
-                    <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
-                </div>
-            ))}
-        </Slider>
+        <div style={{ width: '90%', margin: '0 auto' }}>
+            <Slider {...settings}>
+                {images.map((image, index) => (
+                    <div key={index}>
+                        <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
+                    </div>
+                ))}
+            </Slider>
+        </div>
     );
 };
 
