@@ -5,8 +5,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Bem-vindo ao Meu Site em React!</h1>
-      <p>Este é um site simples criado com React.js.</p>
     </div>
   );
 }
