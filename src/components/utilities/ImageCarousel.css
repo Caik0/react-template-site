@@ -1,0 +1,42 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease, transform 0.5s ease;
+    
+}
+
+.slick-slide {
+    height: auto;
+    opacity: 0.5; /* Opacidade das imagens fora do foco */
+}
+
+.slick-current .carousel-image {
+    filter: none; /* Remove o filtro de desfoque da imagem em foco */
+}
+
+.slick-slide img {
+    filter: blur(5px); /* Aplica desfoque nas imagens que não estão em foco */
+}
+.slick-slide:not(.slick-center) .carousel-image {
+    filter: blur(5px);
+    transform: scale(0.9); /* Reduz o tamanho das imagens laterais */
+}

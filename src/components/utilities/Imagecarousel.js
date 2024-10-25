@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import './ImageCarousel.css';
 
 const ImageCarousel = () => {
     const settings = {
@@ -8,6 +9,8 @@ const ImageCarousel = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true, 
+        centerPadding: '20%', 
         autoplay: true,
         autoplaySpeed: 2000,
     };
@@ -20,11 +23,13 @@ const ImageCarousel = () => {
     ];
 
     return (
-        <div style={{ width: '90%', margin: '0 auto' }}>
+        <div className="carousel-container">
             <Slider {...settings}>
                 {images.map((image, index) => (
-                    <div key={index}>
-                        <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
+                    <div key={index} className="slide">
+                        <div className="image-wrapper">
+                            <img src={image} alt={`Slide ${index + 1}`} className="carousel-image" />
+                        </div>
                     </div>
                 ))}
             </Slider>

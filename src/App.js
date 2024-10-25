@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ImageCarousel />
+      <div className="bg-violet-400">
+        <ImageCarousel />
+      </div>
     </div>
   );
 }
