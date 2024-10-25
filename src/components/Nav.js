@@ -20,15 +20,15 @@ import {
 
 
 const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+    { name: 'Análise', description: 'Entenda melhor o seu tráfego', href: '#', icon: ChartPieIcon },
+    { name: 'Engajamento', description: 'Fale diretamente com seus clientes', href: '#', icon: CursorArrowRaysIcon },
+    { name: 'Segurança', description: 'Os dados de seus clientes estarão seguros e protegidos', href: '#', icon: FingerPrintIcon },
+    { name: 'Integrações', description: 'Conecte com outras ferramentas', href: '#', icon: SquaresPlusIcon },
+    { name: 'Mecanização', description: 'Crie funis estratégicos para melhor desempenho', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '#', icon: PhoneIcon },
+    { name: 'Demostração', href: '#', icon: PlayCircleIcon },
+    { name: 'Contato', href: '#', icon: PhoneIcon },
 ]
 
 
@@ -36,13 +36,14 @@ function Nav({ onOpenMobileMenu }) {
     return (
         <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
             <div className="flex lg:flex-1">
-                <a href="#" className="-m-1.5 p-1.5">
+                <a href="#" className="flex items-center font-semibold font-sans -m-1.5 p-1.5">
                     <span className="sr-only">Lorem Impsum</span>
                     <img
                         alt="Logo"
                         src={logo}
                         className="h-9 w-auto"
                     />
+                    Lorem Impsum
                 </a>
             </div>
             <div className="flex lg:hidden">
@@ -58,7 +59,7 @@ function Nav({ onOpenMobileMenu }) {
             <PopoverGroup className="hidden lg:flex lg:gap-x-12">
                 <Popover className="relative">
                     <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                        Product
+                        Produtos
                         <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
                     </PopoverButton>
 
@@ -101,13 +102,13 @@ function Nav({ onOpenMobileMenu }) {
                 </Popover>
 
                 <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                    Features
+                    Recursos
                 </a>
                 <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                    Marketplace
+                    Loja
                 </a>
                 <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                    Company
+                    Sobre
                 </a>
             </PopoverGroup>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
