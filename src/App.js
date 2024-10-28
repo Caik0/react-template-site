@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <div className="bg-violet-400">
-        <ImageCarousel />
+      {/* <ImageCarousel /> */}
       </div>
     </div>
   );
