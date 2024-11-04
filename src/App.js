@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="bg-violet-400">
-      {/* <ImageCarousel /> */}
+      <div className="bg-violet-400 ">
+      <ImageCarousel /> 
       </div>
     </div>
   );
